@@ -31,6 +31,12 @@ Create a directory named "MyLab" on the desktop.
 ## COMMAND
 
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
+```
+mkdir %userprofile%\Desktop\MyLab
+cd %userprofile%\Desktop\MyLab
+type nul > MyFile.txt
+
+```
 
 ## OUTPUT:
 
@@ -41,6 +47,9 @@ Change to the "MyLab" directory and create an empty text file named "MyFile.txt"
 ## COMMAND
 
 List the contents of the "MyLab" directory.
+```
+dir %userprofile%\Desktop\MyLab
+```
 
 ## Output:
 
@@ -53,6 +62,12 @@ List the contents of the "MyLab" directory.
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
 Move the "MyLab" directory to the "Documents" folder.
+
+```
+mkdir %userprofile%\Desktop\Backup
+copy MyFile.txt %userprofile%\Desktop\Backup
+
+```
 
 
 ## OUTPUT
