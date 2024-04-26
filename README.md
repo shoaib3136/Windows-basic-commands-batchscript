@@ -78,13 +78,31 @@ copy MyFile.txt %userprofile%\Desktop\Backup
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
+```
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+
+```
+## OUTPUT:
+![image](https://github.com/shoaib3136/Windows-basic-commands-batchscript/assets/117919362/f229b016-199a-41f2-900c-7d8704b48ef7)
+
+
+```
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+del %userprofile%\Documents\*.docx
+
+```
 
 
 
 
 
 
-## OUTPUT
+
+## OUTPUT:
+![image](https://github.com/shoaib3136/Windows-basic-commands-batchscript/assets/117919362/d644b3de-673d-4ee2-8ca8-3cb595e4d128)
+
 
 
 
